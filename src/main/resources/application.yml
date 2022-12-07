@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:shardingsphere:classpath:sharding-table.yml
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
